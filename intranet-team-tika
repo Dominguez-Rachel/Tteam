@@ -1,0 +1,322 @@
+/* BARRE ADMIN */
+#wpadminbar{display:none!important;}
+
+/* DIMINUER TAILLE VIDEO */
+.wp-block-video{
+		width: 600px;
+		margin: auto;
+}
+
+/* PAGE TCHAT */
+.buddypress-wrap .activity-comments .acomment-content p{
+		font-size: 14px;
+		color: black;
+		font-weight: 400;
+		font-style: italic;
+}
+
+.activity-header {
+		font-size: 12px;
+}
+
+.acomment-meta {font-size: 12px;}
+
+.activity-inner {
+		font-size: 15px;
+		font-weight: 400;
+		color: black;
+}
+
+/* OTER CLOCHE NOTIF */
+#user-notification-bubble{display:none;}
+
+#buddypress-group-head{padding-top:50px!important;}
+
+/* ENLEVER WIDGET COL DROITE */
+#content-right-col{display:none!important;}
+
+/* CONTENU MILIEU LARGE */
+#content-left-col{width:100%!important;}
+
+/*REMONTER CONTENU SOUS TITRE H1 */
+#primary{padding-top:0px!important;}
+
+.bbp-search-form{display:none;}
+
+.entry-featured-image{display:none;}
+
+.single .entry-share {display:none;}
+
+.byline{display:none;}
+
+#side-navigation-settings-link{display:none;}
+
+#page-sidebar-widgets{display:none;}
+
+#messages-notification{display:none;}
+
+.entry-author-about{display: none;}
+
+.thrive_entry_footer{display: none;}
+
+.single .entry-head .entry-author{display: none;}
+
+.tribe-events .tribe-events-header{display:none;}
+
+.bbp-template-notice{display:none!important;}
+
+#subscription-toggle{display:none;}
+
+.bbp-topic-tags{display:none!important;}
+
+/* SIMPLIFICATION BARRE TALK */
+#nav-forum{display:none;}
+
+#nav-docs{display:none;}
+
+#invite{display:none;}
+
+/* SIMPLIFICATION BARRE PROFIL */
+#user-front{display:none;}
+#user-activity{display:none;}
+#user-forums{display:none;}
+#user-buddydrive{display:none;}
+#user-docs{display:none;}
+#media-files{display:none;}
+#starred{display:none;}
+#user-groups{display:none;}
+#message-action-star{display:none!important;}
+#invites{display:none;}
+#capabilities{display:none;}
+#data{display:none;}
+#post-mention{display:none!important;}
+#activity-mentions{display:none;}
+#activity-friends{display:none;}
+#activity-groups{display:none;}
+#user-messages{
+display: none;}
+#user-friends{
+display: none;}
+#messages-notification-settings{
+display: none;}
+#friends-notification-settings{display:none;}
+.bp-user #buddypress #item-header .member-header-actions .generic-button{display:none;}
+#thrive-bar .navbar-toggle{display:none;}
+
+/* ENLEVER MODIF ADRESSE MAIL */
+#your-profile > label, #your-profile > input {display: none !important;}
+
+/* PAGE LOGIN/INSCRIPTION */
+.login > #backtoblog{display:none!important;}
+
+#nav {padding-bottom:20px!important;}
+
+.btn-danger {display:none;}
+
+.buddypress-wrap .register-section .bp-heading{font-weight:500;}
+
+#thrive-bar #sidebar-menu-toggle{display: none;}
+
+/* EVENEMENT A VENIR ACCUEIL */
+#ect-events-list-content, .ect-list-wrapper {
+		padding-left:4%!important;
+    padding-right:4%!important;
+    }
+
+.gears-shortcode-element{padding-left:8%!important;}
+
+/* MEMBRES EN LIGNE ACCUEIL */
+.ul-bp-members-grid .gears-bp-members-grid .avatar {
+		border-radius:100%;
+    padding:5%;
+    }
+
+.ul-bp-members-grid .members-name{
+		background-color:white!important;
+		font-size:11px;
+}
+
+.single-tribe_events .tribe-events-content {display:none;}
+
+.tribe-events-ical {display:none!important;}
+
+.single-tribe_events .tribe-events-event-meta{background-color:white!important;}
+
+.subnav-filters {display:none!important;}
+
+/* PAGE EVENT ANNIVERSAIRES */
+
+.h6{text-align: center;}
+
+.sidebar-widgets {padding: 10%;}
+
+.thrive-inline .sidebar-widgets ul li {margin-bottom:7%!important;}
+
+/* PAGE 1 EVENT */
+.single-tribe_events .tribe-events-event-meta {
+		width: 100%;
+		padding: 5%;
+}
+
+/*POLITIQUE DE CONFID */
+#menu-item-5272{
+		position:absolute!important;
+		bottom:0!important;
+		font-style:italic;
+		font-size: 12px;
+}
+
+/*TRANSLATE */
+#glt-translate-trigger{
+		left:0px;
+		font-family: Poppins;
+		font-weight: 300;
+		font-size: 14px;
+}
+			
+/* CARDS ACTU MOBILE */
+@media screen and (max-width: 768px){
+		
+/* LIKE MOBILE */
+.activity-meta{padding: 12px!important;}
+		
+/* IMAGE TALK */
+.buddypress li.buddykit-activity-media-gallery-item img {
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+}
+		
+/* DIMINUER TAILLE VIDEO */
+.wp-block-video{
+		width: 100%;
+		margin: auto;
+}
+		
+.buddykit-activity-media-gallery {width:100%!important;}
+		
+.gears-recent-posts-block article {
+		min-width: 90%;
+		margin: auto;
+    }
+		
+#navbar-search {background:#191919!important;}
+		
+.vc_btn3.vc_btn3-size-lg{
+		font-size: 12px!important;
+		padding-top: 15px!important;
+		padding-bottom: 15px!important;
+		}
+    
+#user-notifications {border-top:4px solid #ededed;}
+
+.gears-shortcode-element {
+		padding-left: 8%!important;
+    padding-right: 8%!important;
+		}
+
+html{margin-top: 0px!important;}
+
+#buddypress-group-head {padding-top: 0px!important;}
+
+/* ENLEVER SITE MENU MOBILE */
+.user-navigation-menu-option-item {
+		display:none!important;
+    }
+
+#page-content-wrapper{
+		padding-left:15px!important;
+}
+		}
+
+#thrive-bar #sidenav-toggle-mobile{
+		background: black;
+		border: 1px solid #4a4a4a;
+		color: white;
+}
+    }
+
+/* ENLEVER BARRE BLANCHE */
+@media (min-width: 768px){
+
+#page-hero {margin: 50px 0!important;}
+
+#buddypress-user-head  margin-top: 50px!important;}
+}
+
+/* SEARCH */
+#ajaxsearchpro1_1, #ajaxsearchpro1_2, div.asp_m.asp_m_1 {
+		max-width: 600px;
+    min-width: 500px;
+    width: 100%;
+    float: left !important;
+    position: relative;
+		height: 50px;align-content}
+
+#ajaxsearchpro1_1 .probox .proinput input.orig, #ajaxsearchpro1_2 .probox .proinput input.orig, div.asp_m.asp_m_1 .probox .proinput input.orig {
+		height:50px;
+}
+
+#ajaxsearchpro1_1 .probox .promagnifier, #ajaxsearchpro1_2 .probox .promagnifier, div.asp_m.asp_m_1 .probox .promagnifier {
+    width: 50px;
+    height: 50px;
+}
+
+#ajaxsearchpro1_1 .probox .promagnifier div.innericon, #ajaxsearchpro1_2 .probox .promagnifier div.innericon, div.asp_m.asp_m_1 .probox .promagnifier div.innericon {
+    width: 50px;
+    height: 50px;
+}
+
+#ajaxsearchpro1_1 .probox, #ajaxsearchpro1_2 .probox, div.asp_m.asp_m_1 .probox {
+    height: 50px;
+}
+
+#ajaxsearchpro1_1, #ajaxsearchpro1_2, div.asp_m.asp_m_1 { background-image: -webkit-radial-gradient(center,ellipse cover,#3e3e3e,#3e3e3e);}
+
+#ajaxsearchpro1_1 .probox .promagnifier, #ajaxsearchpro1_2 .probox .promagnifier, div.asp_m.asp_m_1 .probox .promagnifier {
+		background-image:none;
+}
+
+#ajaxsearchpro1_1 .probox .proloading, #ajaxsearchpro1_1 .probox .proclose, #ajaxsearchpro1_1 .probox .promagnifier, #ajaxsearchpro1_1 .probox .prosettings, #ajaxsearchpro1_2 .probox .proloading, #ajaxsearchpro1_2 .probox .proclose, #ajaxsearchpro1_2 .probox .promagnifier, #ajaxsearchpro1_2 .probox .prosettings, div.asp_m.asp_m_1 .probox .proloading, div.asp_m.asp_m_1 .probox .proclose, div.asp_m.asp_m_1 .probox .promagnifier, div.asp_m.asp_m_1 .probox .prosettings {
+    width: 50px;
+    height: 50px;
+}
+
+#ajaxsearchpro1_1 .probox .proinput input.autocomplete, #ajaxsearchpro1_2 .probox .proinput input.autocomplete, div.asp_m.asp_m_1 .probox .proinput input.autocomplete {
+		display:none;
+}
+
+#ajaxsearchprores1_1.vertical, #ajaxsearchprores1_2.vertical, div.asp_r.asp_r_1.vertical {
+    padding: 4px;
+    background: white;
+    border-radius: 0px 0px 5px 5px !important;
+		box-shadow: 0 0 40px rgb(51 51 51 / 10%); }
+
+#ajaxsearchprores1_1.vertical .results .item::after, #ajaxsearchprores1_2.vertical .results .item::after, div.asp_r.asp_r_1.vertical .results .item::after {
+    height: 1px;
+    background: rgb(243 243 243);
+}
+@media only screen and (max-width: 600px) {
+		#ajaxsearchpro1_1, #ajaxsearchpro1_2, div.asp_m.asp_m_1 {
+    max-width: 100%;
+    min-width: 100%;
+		width:100%;
+		}
+		
+#ajaxsearchpro1_1 .probox .proloading .asp_loader, #ajaxsearchpro1_2 .probox .proloading .asp_loader, div.asp_m.asp_m_1 .probox .proloading .asp_loader {
+		margin-top:10px;
+		}
+
+/* BIRTHDAY */
+.sidebar-widgets {
+    background: #fff;
+		padding: 40px !important;
+    }
+
+.sidebar-widgets {
+    background: #fff;
+    padding: 15px;
+    display: block;
+    margin: 15px 0;
+    box-shadow: none !important;
+    }
