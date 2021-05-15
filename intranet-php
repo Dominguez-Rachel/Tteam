@@ -1,0 +1,111 @@
+<?php
+/**
+ * Child Theme Functions 
+ * thrive-nouveau-child/functions.php
+ * Child theme functions.php
+ * Put all your php script modifications here.
+ *
+ * @version  1.0
+ */
+// Enqueue boostrap.
+add_action( 'wp_enqueue_scripts', 'thrive_nouveau_child_enqueue_bootstrap' );
+
+// The child theme style.css.
+add_action( 'wp_enqueue_scripts', 'thrive_nouveau_child_enqueue' );
+
+/**
+ * Re-enqeue bootstrap file. Not doing this would re-index our style.css ahead of bootstrap.
+ * @return void
+ */
+function thrive_nouveau_child_enqueue_bootstrap() {
+	wp_enqueue_style( 'thrive-bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array('thrive-google-font') );
+}
+
+/**
+ * Actually enqueue our stylesheet.
+ * @return void
+ */
+function thrive_nouveau_child_enqueue() 
+{
+
+	$parent_style = 'thrive-style';
+
+	wp_enqueue_style( $parent_style, 
+		get_template_directory_uri(). '/style.css'  );
+
+	wp_enqueue_style( 'thrive-child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        array( $parent_style, 'thrive-bootstrap' ),
+        wp_get_theme()->get('Version')
+    );
+
+}
+
+// Limiter inscriptions @tikamoon.com
+
+// Check et retour erreur
+function bp_as_restrict_signup_domains( $result ) {
+
+	// Retour si pas @tikamoon.com
+	if ( bp_as_check_email_domains( $result['user_email'] ) ) {
+		$result['errors']->add('user_email', __('Vous devez avoir une adresse email @tikamoon.com pour vous inscrire.', 'bp-restrict-email-domains' ) );
+	};
+	return $result;
+
+};
+
+add_filter( 'bp_core_validate_user_signup', 'bp_as_restrict_signup_domains' );
+
+function bp_as_check_email_domains( $user_email ) {
+
+	$email_domain = strtolower( substr( $user_email, 1 + strpos( $user_email, '@' ) ) );
+
+	$is_tika = strpos( $email_domain , "tikamoon.com" );
+
+	if ($is_tika === false) {
+		return true;
+	}
+	else {
+		return false;
+	};
+
+};
+
+
+
+// Supprimer liens login page
+
+add_action( 'login_head', 'hide_login_nav' );
+
+function hide_login_nav()
+{
+?><style>#backtoblog{display:none} .login .privacy-policy-page-link{display:none;} .login p#nav {padding-bottom: 20px;}</style><?php
+}
+
+// Upload media - Accépter d'autres formats
+/**
+ * Add images types to allowed file extension.
+ *
+ * @param array $extensions all extension.
+ *
+ * @return mixed
+ */
+function buddydev_custom_profile_field_type_file_extensions( $extensions ) {
+
+	$extensions['file'] = array_merge(
+		$extensions['file'],
+		array(
+			'jpg',
+			'jpeg',
+			'gif',
+			'png',
+			'pdf',
+			'csv',
+			'docx'
+		)
+	);
+
+	return $extensions;
+}
+
+add_filter( 'bpxcftr_allowed_extensions', 'buddydev_custom_profile_field_type_file_extensions' );
