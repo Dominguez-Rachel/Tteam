@@ -244,69 +244,6 @@ html{margin-top: 0px!important;}
 #buddypress-user-head  margin-top: 50px!important;}
 }
 
-/* SEARCH */
-#ajaxsearchpro1_1, #ajaxsearchpro1_2, div.asp_m.asp_m_1 {
-		max-width: 600px;
-    min-width: 500px;
-    width: 100%;
-    float: left !important;
-    position: relative;
-		height: 50px;align-content}
-
-#ajaxsearchpro1_1 .probox .proinput input.orig, #ajaxsearchpro1_2 .probox .proinput input.orig, div.asp_m.asp_m_1 .probox .proinput input.orig {
-		height:50px;
-}
-
-#ajaxsearchpro1_1 .probox .promagnifier, #ajaxsearchpro1_2 .probox .promagnifier, div.asp_m.asp_m_1 .probox .promagnifier {
-    width: 50px;
-    height: 50px;
-}
-
-#ajaxsearchpro1_1 .probox .promagnifier div.innericon, #ajaxsearchpro1_2 .probox .promagnifier div.innericon, div.asp_m.asp_m_1 .probox .promagnifier div.innericon {
-    width: 50px;
-    height: 50px;
-}
-
-#ajaxsearchpro1_1 .probox, #ajaxsearchpro1_2 .probox, div.asp_m.asp_m_1 .probox {
-    height: 50px;
-}
-
-#ajaxsearchpro1_1, #ajaxsearchpro1_2, div.asp_m.asp_m_1 { background-image: -webkit-radial-gradient(center,ellipse cover,#3e3e3e,#3e3e3e);}
-
-#ajaxsearchpro1_1 .probox .promagnifier, #ajaxsearchpro1_2 .probox .promagnifier, div.asp_m.asp_m_1 .probox .promagnifier {
-		background-image:none;
-}
-
-#ajaxsearchpro1_1 .probox .proloading, #ajaxsearchpro1_1 .probox .proclose, #ajaxsearchpro1_1 .probox .promagnifier, #ajaxsearchpro1_1 .probox .prosettings, #ajaxsearchpro1_2 .probox .proloading, #ajaxsearchpro1_2 .probox .proclose, #ajaxsearchpro1_2 .probox .promagnifier, #ajaxsearchpro1_2 .probox .prosettings, div.asp_m.asp_m_1 .probox .proloading, div.asp_m.asp_m_1 .probox .proclose, div.asp_m.asp_m_1 .probox .promagnifier, div.asp_m.asp_m_1 .probox .prosettings {
-    width: 50px;
-    height: 50px;
-}
-
-#ajaxsearchpro1_1 .probox .proinput input.autocomplete, #ajaxsearchpro1_2 .probox .proinput input.autocomplete, div.asp_m.asp_m_1 .probox .proinput input.autocomplete {
-		display:none;
-}
-
-#ajaxsearchprores1_1.vertical, #ajaxsearchprores1_2.vertical, div.asp_r.asp_r_1.vertical {
-    padding: 4px;
-    background: white;
-    border-radius: 0px 0px 5px 5px !important;
-		box-shadow: 0 0 40px rgb(51 51 51 / 10%); }
-
-#ajaxsearchprores1_1.vertical .results .item::after, #ajaxsearchprores1_2.vertical .results .item::after, div.asp_r.asp_r_1.vertical .results .item::after {
-    height: 1px;
-    background: rgb(243 243 243);
-}
-@media only screen and (max-width: 600px) {
-		#ajaxsearchpro1_1, #ajaxsearchpro1_2, div.asp_m.asp_m_1 {
-    max-width: 100%;
-    min-width: 100%;
-		width:100%;
-		}
-		
-#ajaxsearchpro1_1 .probox .proloading .asp_loader, #ajaxsearchpro1_2 .probox .proloading .asp_loader, div.asp_m.asp_m_1 .probox .proloading .asp_loader {
-		margin-top:10px;
-		}
-
 /* BIRTHDAY */
 .sidebar-widgets {
     background: #fff;
